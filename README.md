@@ -4,7 +4,7 @@ A fully playable chess application built in Python using Pygame for graphics and
 Architecture
 The project is cleanly separated into distinct modules, each with a focused responsibility:
 
-main.py.py — The entry point and game loop. Handles Pygame initialization, rendering the board and pieces, highlighting valid moves, processing mouse clicks, and detecting end-game states. Keyboard shortcuts let you reset (r) or undo (u) moves.
+main.py — The entry point and game loop. Handles Pygame initialization, rendering the board and pieces, highlighting valid moves, processing mouse clicks, and detecting end-game states. Keyboard shortcuts let you reset (r) or undo (u) moves.
 
 chess_engine.py — The heart of the game. The game_state class tracks the board, whose turn it is, move history, and captured pieces. It implements the full rules of chess: legal move generation, check/checkmate/stalemate detection, castling, en passant, pawn promotion, pins, and move undo via a chess_move history log.
 
